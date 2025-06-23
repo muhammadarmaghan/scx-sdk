@@ -1,0 +1,29 @@
+{
+  "name": "scipherx-sdk",
+  "version": "1.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "copy-types": "mkdir -p dist/types && cp -r src/types/* dist/types",
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@noble/ciphers": "^0.5.3",
+    "cross-fetch": "^4.0.0",
+    "jest-fetch-mock": "^3.0.3",
+    "js-base64": "^3.7.5"
+  }
+}
